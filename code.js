@@ -60,14 +60,15 @@ function playRound(humanchoice, computerchoice) {
     
 }
 function playGame() {
-    let ind = 0
-    while (ind < 5) {
-        const humanchoice = getHumanChoice();
-        const computerchoice = getComputerChoice();
-        playRound(humanchoice, computerchoice)
-        ind++
-    }
-    alert("YourScore:" + humanScore)
+  playRound(humanchoice, computerchoice);
+    // let ind = 0
+    // while (ind < 5) {
+    //     const humanchoice = getHumanChoice();
+    //     const computerchoice = getComputerChoice();
+    //     playRound(humanchoice, computerchoice)
+    //     ind++
+    // }
+    // alert("YourScore:" + humanScore)
 
 
 }
