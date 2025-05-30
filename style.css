@@ -1,9 +1,20 @@
 * {
     font-family: 'Courier New', Courier, monospace;
+    /* border: solid red 1px; */
 }
 
 body {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    
+
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
 }
 .title {
     color: aliceblue;
@@ -17,44 +28,50 @@ body {
     padding-bottom: 20px;
 }
 
-.computerChoice  {
+.computerChoice, .yourChoice{
 
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
-    align-content: center;
     justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
 }
 .box {
 
     border: solid white 1px;
     color: aliceblue;
-    height: 256px;
-    width: 256px;
-    
+    flex: 1 1 200px;
+    aspect-ratio: 1 /1;
+    max-height: 256px;
+    max-width: 256px;
 }
-.yourChoice {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
+
 .buttons{
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+   
 
 }
 
 .rock, .paper, .scissors {
-    height: 86px;
-    width: 86px;
+    height: 60px;
+    width: 130px;
     border-radius: 20px;
     background-color: black;
     border: solid white 1px;
     color: aliceblue;
+    flex: 0 1 auto;
+    font-size: 24px;
+}
+
+.rock:hover , .paper:hover , .scissors:hover {
+    background-color: white;
+    color: black;
+    border-color: aliceblue;
 
 }
 .message {
